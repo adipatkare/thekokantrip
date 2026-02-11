@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kokan Trip - Luxury Beach Resort</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-info">
+                <p><i class="fas fa-envelope"></i> MAILS ARE 24/48H(M - F)/240 HRS (HOLIDAY)</p>
+                <p><i class="fas fa-phone"></i> 50% CLOSED</p>
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="The Kokan Trip" onerror="this.style.display='none'">
+                <span>The Kokan Trip</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="hero-content">
+            <h1>Solution for<br>Lux Beach Stay</h1>
+            <button class="btn-primary">APPLY NOW</button>
+        </div>
+        <button class="slider-btn next-btn" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <h2>Diveghar Special Offer</h2>
+            <div class="offers-grid">
+                <!-- Offer 1 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="beach1.jpg" alt="Konkan Escape" onerror="this.src='https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400'">
+                    </div>
+                    <h3>Konkan Escape</h3>
+                    <div class="offer-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <p class="label">Arrival</p>
+                                <p class="value">26th to 30 Seacel Beach</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <p class="label">Accom.</p>
+                                <p class="value">2BR by Oceanfront Beach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-section">
+                        <div class="price">
+                            <span class="amount">5,200/-</span>
+                            <span class="per">INR</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn-secondary">APPLY NOW</button>
+                            <button class="btn-outline">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="booking-badge">Booked: 500/530</div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="beach2.jpg" alt="Ganpatipule Escape" onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400'">
+                    </div>
+                    <h3>Ganpatipule Escape</h3>
+                    <div class="offer-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <p class="label">Arrival</p>
+                                <p class="value">26th to 30 Seacel Beach</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <p class="label">Accom.</p>
+                                <p class="value">2BR by Oceanfront Beach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-section">
+                        <div class="price">
+                            <span class="amount">5,200/-</span>
+                            <span class="per">INR</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn-secondary">APPLY NOW</button>
+                            <button class="btn-outline">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="booking-badge">Booked: 500/530</div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="beach3.jpg" alt="Konkan Escape" onerror="this.src='https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400'">
+                    </div>
+                    <h3>Konkan Escape</h3>
+                    <div class="offer-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <p class="label">Arrival</p>
+                                <p class="value">26th to 30 Seacel Beach</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <p class="label">Accom.</p>
+                                <p class="value">2BR by Oceanfront Beach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-section">
+                        <div class="price">
+                            <span class="amount">5,200/-</span>
+                            <span class="per">INR</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn-secondary">APPLY NOW</button>
+                            <button class="btn-outline">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="booking-badge">Booked: 500/530</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="what-we-offer">
+        <div class="container">
+            <div class="offer-content">
+                <span class="subtitle">FEATURES</span>
+                <h2>What Do We Offer?</h2>
+                <p>We offer Luxurious and pocket-friendly packages for all kinds of places, full of natural beauty, historical and spiritual journey, thrilling and adventurous places, vast variety of retreats, spas, and pools with exquisite cruise facilities and all trip plans for health, honeymoon, traveling, and all other upcoming special days.</p>
+                <button class="btn-primary">APPLY NOW</button>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <h4>Personalised Itineraries</h4>
+                            <p>Tailored travel plans designed to suit your interests and schedule.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h4>Hassle-Free Planning</h4>
+                            <p>Let our experienced team handle all your travel arrangements.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div>
+                            <h4>Local Experiences</h4>
+                            <p>Discover hidden gems and authentic local culture.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-bed"></i>
+                        <div>
+                            <h4>Comfortable Stays</h4>
+                            <p>Enjoy handpicked accommodations for a relaxing experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offer-image">
+                <img src="beach-chairs.jpg" alt="Beach Relaxation" onerror="this.src='https://images.unsplash.com/photo-1473186578172-c141e6798cf4?w=600'">
+            </div>
+        </div>
+    </section>
+
+    <!-- The Smart Way -->
+    <section class="smart-way">
+        <div class="container">
+            <div class="smart-image">
+                <img src="palm-trees.jpg" alt="Palm Trees" onerror="this.src='https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600'">
+            </div>
+            <div class="smart-content">
+                <span class="subtitle">LUXURY</span>
+                <h2>The Smart Way to Go Diveghar</h2>
+                <p>Diveghar (one in the complex, offers 2 cameras, wifi integrated smart lock infrastructure) with Dhoodhsagar park, Sai Mata Temple, Ganpati-pule, Velas beach and much more to explore and enjoy.</p>
+                
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check"></i> Complete control for streamline Diveghar room.</li>
+                    <li><i class="fas fa-check"></i> Trusted ones staying ensuring your asset appreciated.</li>
+                    <li><i class="fas fa-check"></i> Transparent planning ensuring smooth booking.</li>
+                </ul>
+
+                <button class="btn-primary">APPLY NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay Packages -->
+    <section class="stay-packages">
+        <div class="container">
+            <h2>Diveghar Stay Package</h2>
+            <div class="packages-grid">
+                <!-- Apartments -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Apartments</h3>
+                        <p class="package-price">Starting From ₹3000 INR / Person</p>
+                    </div>
+                    <button class="btn-dark">GET IT NOW</button>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Flexible arrival, checkout.</li>
+                        <li><i class="fas fa-check"></i> International dishes.</li>
+                        <li><i class="fas fa-check"></i> Local Transportation.</li>
+                        <li><i class="fas fa-check"></i> Air-conditioned.</li>
+                        <li><i class="fas fa-check"></i> Laundry.</li>
+                        <li><i class="fas fa-check"></i> Dinner.</li>
+                    </ul>
+                </div>
+
+                <!-- Cabins -->
+                <div class="package-card featured">
+                    <div class="package-header">
+                        <h3>Cabins</h3>
+                        <p class="package-price">Starting From ₹5000 INR / Person</p>
+                    </div>
+                    <button class="btn-primary">GET IT NOW</button>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Flexible arrival, checkout.</li>
+                        <li><i class="fas fa-check"></i> International dishes.</li>
+                        <li><i class="fas fa-check"></i> Local Transportation.</li>
+                        <li><i class="fas fa-check"></i> Air-conditioned.</li>
+                        <li><i class="fas fa-check"></i> Laundry.</li>
+                        <li><i class="fas fa-check"></i> Dinner.</li>
+                    </ul>
+                </div>
+
+                <!-- Villas -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Villas</h3>
+                        <p class="package-price">Starting From ₹10000 INR / Person</p>
+                    </div>
+                    <button class="btn-dark">GET IT NOW</button>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Flexible arrival, checkout.</li>
+                        <li><i class="fas fa-check"></i> International dishes.</li>
+                        <li><i class="fas fa-check"></i> Local Transportation.</li>
+                        <li><i class="fas fa-check"></i> Air-conditioned.</li>
+                        <li><i class="fas fa-check"></i> Laundry.</li>
+                        <li><i class="fas fa-check"></i> Dinner.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section class="apply-section">
+        <div class="container">
+            <div class="apply-card">
+                <h2>Apply Now<br>Up 10% Discount*</h2>
+            </div>
+            <div class="apply-content">
+                <h3>Apply your Diveghar Stay Package,<br>and Get 10% Discount</h3>
+                <p>Apply for your Diveghar Stay Package and grab USD. We discount 10% from non-refundable rates. Whether you're looking for Last Minute Discount or simply you want to book your resort, you'll find this offer to save money from this saving.</p>
+                
+                <div class="apply-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span>Register Here</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span>Fill in your details</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span>Wait our Call</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <span>Go Diveghar</span>
+                    </div>
+                </div>
+
+                <button class="btn-outline">APPLY NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="logo-footer">
+                        <img src="logo.png" alt="The Kokan Trip" onerror="this.style.display='none'">
+                        <span>The Kokan Trip</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat massa quis enim.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Useful Link</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> All Res. 50 Km Divaghar Beaches</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91-253-2312345</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Email: info@thekokentrip.com</a></li>
+                    </ul>
+                    <h4 style="margin-top: 20px;">Privacy Policy</h4>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Gallery</h3>
+                    <div class="gallery-grid">
+                        <img src="g1.jpg" alt="Gallery 1" onerror="this.src='https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=150&h=150&fit=crop'">
+                        <img src="g2.jpg" alt="Gallery 2" onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150&h=150&fit=crop'">
+                        <img src="g3.jpg" alt="Gallery 3" onerror="this.src='https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=150&h=150&fit=crop'">
+                        <img src="g4.jpg" alt="Gallery 4" onerror="this.src='https://images.unsplash.com/photo-1473186578172-c141e6798cf4?w=150&h=150&fit=crop'">
+                        <img src="g5.jpg" alt="Gallery 5" onerror="this.src='https://images.unsplash.com/photo-1519046904884-53103b34b206?w=150&h=150&fit=crop'">
+                        <img src="g6.jpg" alt="Gallery 6" onerror="this.src='https://images.unsplash.com/photo-1551244072-5d12893278ab?w=150&h=150&fit=crop'">
+                        <img src="g7.jpg" alt="Gallery 7" onerror="this.src='https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=150&h=150&fit=crop'">
+                        <img src="g8.jpg" alt="Gallery 8" onerror="this.src='https://images.unsplash.com/photo-1540202404-a2f29016b523?w=150&h=150&fit=crop'">
+                        <img src="g9.jpg" alt="Gallery 9" onerror="this.src='https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=150&h=150&fit=crop'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
