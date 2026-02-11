@@ -156,7 +156,7 @@ function animateCounter(element, target) {
             current = target;
             clearInterval(timer);
         }
-        element.textContent = `Booked: ${Math.floor(current)}/530`;
+        element.textContent = `Booked: ${Math.floor(current)}/150`;
     }, 30);
 }
 
@@ -165,13 +165,38 @@ const bookingBadges = document.querySelectorAll('.booking-badge');
 const badgeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !entry.target.dataset.animated) {
-            animateCounter(entry.target, 500);
+            animateCounter(entry.target, 100);
             entry.target.dataset.animated = 'true';
         }
     });
 }, { threshold: 0.5 });
 
 bookingBadges.forEach(badge => badgeObserver.observe(badge));
+
+// Booking Form Submission
+function handleBookingSubmit(event) {
+    event.preventDefault();
+    
+    const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        mobile: document.getElementById('mobile').value,
+        email: document.getElementById('email').value,
+        adults: document.getElementById('adults').value,
+        children: document.getElementById('children').value,
+        checkin: document.getElementById('checkin').value,
+        checkout: document.getElementById('checkout').value,
+        comments: document.getElementById('comments').value
+    };
+    
+    console.log('Booking Form Data:', formData);
+    
+    // Show success message
+    alert(`Thank you for your booking request!\n\nWe will contact you soon at ${formData.mobile}.\n\nBooking Details:\n- Check-in: ${formData.checkin}\n- Check-out: ${formData.checkout}\n- Adults: ${formData.adults}\n- Children: ${formData.children}`);
+    
+    // Reset form
+    document.getElementById('bookingForm').reset();
+}
 
 // Form handling (if you add a form later)
 function handleFormSubmit(event) {
